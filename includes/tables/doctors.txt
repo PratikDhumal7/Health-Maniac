@@ -1,0 +1,10 @@
+CREATE TABLE doctors (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(30) NOT NULL UNIQUE,
+	password VARCHAR(64) NOT NULL,
+	name VARCHAR(30) NOT NULL,
+	phone_no VARCHAR(15),
+	hosp_id INT NOT NULL,
+	email VARCHAR(30),
+    FOREIGN KEY(hosp_id) REFERENCES hositals(hosp_id)
+);

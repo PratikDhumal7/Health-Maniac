@@ -1,0 +1,4 @@
+create orders database
+add buy med in patient portal
+see orders in chemist portal
+accept or deny orders in chem portal

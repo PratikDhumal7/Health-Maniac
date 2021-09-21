@@ -1,0 +1,7 @@
+CREATE TABLE cancel_requests (
+	id int NOT null PRIMARY KEY AUTO_INCREMENT,
+	app_id INT NOT NULL,
+	doc_id INT NOT NULL,
+	FOREIGN KEY (doc_id) REFERENCES doctors(id),
+	FOREIGN KEY (app_id) REFERENCES appointments(app_id)
+);

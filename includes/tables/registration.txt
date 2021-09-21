@@ -1,0 +1,8 @@
+doctor -
+name, phone no, hospital - drop down menu, email
+
+patient - 
+name, address, phone no, email, dob, gender
+
+chemist -
+name, shop address, phone no, email

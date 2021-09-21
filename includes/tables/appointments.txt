@@ -1,0 +1,13 @@
+CREATE TABLE Appointments (
+	app_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	doctor_id INT NOT NULL,
+	patient_id INT NOT NULL,
+	app_date DATE NOT NULL,
+	slot INT NOT NULL,
+	hosp_id INT NOT NULL,
+	cancelled BIT DEFAULT 0,
+	prescription VARCHAR(20) DEFAULT NULL,
+	FOREIGN KEY (doctor_id) REFERENCES doctors(id),
+	FOREIGN KEY (patient_id) REFERENCES patients(id),
+	FOREIGN KEY (hosp_id) REFERENCES hospitals(hosp_id)
+)

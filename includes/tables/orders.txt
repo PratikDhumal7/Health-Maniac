@@ -1,0 +1,6 @@
+CREATE TABLE orders(
+	order_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	chem_id INT NOT NULL,
+	order_name VARCHAR(30),
+	FOREIGN KEY (chem_id) REFERENCES chemists(id)
+);
